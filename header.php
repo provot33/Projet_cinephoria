@@ -18,7 +18,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="index.php"><img src="assets\Capture d'écran 2024-09-26 225628.jpg" alt="logo du cinéma cinephoria" width="150px"></a>
+                    <a class="navbar-brand" href="index.php"><img src= "assets\logo_cinephoria\Capture d'écran 2024-09-26 225628.jpg" alt="logo du cinéma cinephoria" width="150px"></a>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="page_de_connexion_cinephoria.php">Se connecter</a>

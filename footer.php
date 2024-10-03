@@ -38,7 +38,7 @@
     </tr>
 </table>
 
-<h2><i class="bi bi-film"></i><i class="bi bi-car-front-fill"></i> Cinephoria <br>
+<h2><i class="bi bi-film"></i>cd<i class="bi bi-car-front-fill"></i> Cinephoria <br>
     220 chemin long <br>
     33000 Bordeaux <br>
     <i class="bi bi-telephone-fill">0970543233</i>

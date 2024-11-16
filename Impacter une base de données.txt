@@ -1,0 +1,21 @@
+Idée 1 :
+-- suppression des contraintes de clés étrangères
+SET FOREIGN_KEY_CHECKS=0;
+
+-- suppression de la table
+drop table film;
+
+-- création de la table modifiée/corrigée
+CREATE TABLE FILM…
+
+-- insertion des données avec les nouvelles données prises en compte
+INSERT INTO FILM
+
+-- activation des contraintes de clés étrangères
+SET FOREIGN_KEY_CHECKS=1;
+
+Idée 2 :
+-- Après toutes les créations, on complète la BDD en faisant
+ALTER TABLE
+
+UPDATE TABLE

@@ -1,5 +1,9 @@
 <?php
 require_once('template\header.php');
+
+if(!isset($_SESSION['user'])) {
+    header('location: login.php');
+}
 require_once('lib\film.php');
 require_once('lib\tools.php');
 

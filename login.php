@@ -1,24 +1,21 @@
 <?php
 require_once('template\header.php');
+require_once('lib/user.php');
 $errors = [];
 $messages = [];
 
 if (isset($_POST['loginUser'])) {
-    $query = $pdo->prepare("SELECT * FROM UTILISATEUR WHERE ADRESSE_ELECTRONIQUE = :ADRESSE_ELECTRONIQUE");
-    $query->bindParam(':ADRESSE_ELECTRONIQUE', $_POST['ADRESSE_ELECTRONIQUE'], PDO::PARAM_STR );
-    $query->execute();
-    $user= $query->fetch();
 
-    $query = $pdo->prepare("SELECT PASSWORD(:MOT_DE_PASSE) AS PASSCRYPT FROM DUAL");
-    $query->bindParam(':MOT_DE_PASSE', $_POST['MOT_DE_PASSE'], PDO::PARAM_STR );
-    $query->execute();
-    $passcrypt= $query->fetch();
-    if ($user && $user['MOT_DE_PASSE'] === $passcrypt['PASSCRYPT']) {
-            $messages[] = 'Connexion ok';
-        } else {
-            $errors[] = 'Email ou mot de passe erroné';
-    }
+    $user = verifyUserLoginPassword($pdo, $_POST['ADRESSE_ELECTRONIQUE'], $_POST['MOT_DE_PASSE']);
+    if ($user) {
+        $_SESSION['user'] = ['email' => $user['email']];
+        header('location: index.php');
+    } else {
+        $errors[] = 'Email ou mot de passe incorrect';
 }
+}
+
+
 ?>
 <main>
     <h1>Connexion</h1>

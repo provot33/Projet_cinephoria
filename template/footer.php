@@ -1,7 +1,9 @@
 <footer>
-    <table>
 
-        <caption><strong>Nos horaires d'ouverture:</strong></caption>
+    <div class=footerHorairesOuverture>
+        <table>
+
+        <legend><strong>Nos horaires d'ouverture:</strong></legend>
         <tr>
             <td>Lundi</td>
             <td>:</td>
@@ -38,15 +40,16 @@
             <td>10H-23H</td>
         </tr>
     </table>
-
-    <h2><i class="bi bi-film"></i><i></i>
+    </div>
+    <div class= information>
+    <i class="bi bi-film"></i>
         Cinephoria <i class="bi-car-front-fill"></i> <br>
         220 chemin long <br>
         33000 Bordeaux <br>
         <i class="bi bi-telephone-fill">0970543233</i>
-    </h2>
+    <div class="h2_center">Copyright© 2024 tous droits reservés</div>
 
-    <h2 class="h2_center">Copyright© 2024 tous droits reservés</h2>
 </footer>
 </body>
 </html>
+</div>

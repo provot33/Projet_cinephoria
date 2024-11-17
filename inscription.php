@@ -31,16 +31,14 @@ if (isset($_POST['addUser'])) {
         </div>
     <?php } ?>
     <form method="post" enctype="multipart/form-data" name="">
+    <div class="mb-3">
+            <label for="PRENOM" class="form label">Prénom</label>
+            <input type="text" name="PRENOM" id="PRENOM" class="form control">
+            </div>
         <div class="mb-3">
             <label for="NOM" class="form label">Nom</label>
             <input type="text" name="NOM" id="NOM" class="form control">
             </div>
-            
-            <div class="mb-3">
-            <label for="PRENOM" class="form label">Prénom</label>
-            <input type="text" name="PRENOM" id="PRENOM" class="form control">
-            </div>
-
             <div class="mb-3">
             <label for="NOM_UTILISATEUR" class="form label">Nom utilisateur</label>
             <input type="text" name="NOM_UTILISATEUR" id="NOM_UTILISATEUR" class="form control">

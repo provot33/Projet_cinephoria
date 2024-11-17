@@ -1,6 +1,7 @@
 <?php
 require_once('lib/config.php');
 require_once('lib/pdo.php');
+require_once('lib\session.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -11,7 +12,8 @@ require_once('lib/pdo.php');
     <title>Document</title>
     <link rel="stylesheet" href="./Bootstrap/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./Bootstrap_icons/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets\style.css">
+    <link rel="stylesheet" href="assets\style_element_bootstrap.css">
+    <link rel="stylesheet" href="assets\style_formulaire.css">
 </head>
 
 <body>
@@ -29,9 +31,16 @@ require_once('lib/pdo.php');
                             <li class="nav-item"><a class="nav-link active" aria-current="page" href=<?= $key ?> class="nav-link"><?= $value ?></a></li>
                         <?php } ?>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    
+                        <div class="col-md-3 text-end">
+                            <?php if (!isset($_SESSION['user'])) { ?>
+                                <a href="login.php" class="btn btn-outline-primary me-2">Se connecter</a>
+                                <a href="inscription.php" class="btn btn-outline-primary me-2">S'inscrire</a>
+                            <?php } else { ?>
+                                <a href="logout.php" class="btn btn-primary">Se déconnecter</a>
+                            <?php } ?>
+
+                        </div>
                     </form>
                 </div>
             </div>

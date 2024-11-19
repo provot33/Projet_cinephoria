@@ -50,6 +50,7 @@
     <div class="h2_center">Copyright© 2024 tous droits reservés</div>
 
 </footer>
+<script src="./Bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 </div>

@@ -1,4 +1,7 @@
 
+<?php 
+    require_once 'template\header.php'
+    ?>
     <!--Début formulaire-->
     <main>
         <section>
@@ -53,3 +56,7 @@
         </section>
     </main>
     <!--fin formulaire-->
+    <?php 
+    require_once 'template/footer.php'
+    ?>
+    

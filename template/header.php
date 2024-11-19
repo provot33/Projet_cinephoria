@@ -30,6 +30,12 @@ require_once('lib\session.php');
                         <?php foreach ($mainMenu as $key => $value) { ?>
                             <li class="nav-item"><a class="nav-link active" aria-current="page" href=<?= $key ?> class="nav-link"><?= $value ?></a></li>
                         <?php } ?>
+                        <?php 
+                            $_SESSION['salarie'] = "PourLinstantOnAffiche";
+                            if(isset($_SESSION['salarie'])) {
+                            foreach ($mainMenuEmploye as $key => $value) { ?>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href=<?= $key ?> class="nav-link"><?= $value ?></a></li>
+                        <?php }} ?>
                     </ul>
                     
                         <div class="col-md-3 text-end">
@@ -47,4 +53,4 @@ require_once('lib\session.php');
         </nav>
         <!---fin navbar bootstrap--->
     </header>
-    <script src="./Bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    

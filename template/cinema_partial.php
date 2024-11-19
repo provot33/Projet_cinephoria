@@ -3,7 +3,7 @@
         <div class="row g-0">
             <div class="col-md-4">
                 <p class="card-text"></p>
-                <img src="<?=getFilmImage ($cinema ['URL_AFFICHE']) ?>" class="img-fluid rounded-start" alt="photo de film">
+                <img src="<?=getCinemaImage($cinema['URL_CINEMA'])?>" class="img-fluid rounded-start" alt="photo de film">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -12,7 +12,7 @@
                     <p class="card-text"><small class="text-body-secondary"><?= $cinema['CODE_POSTAL'] ?></small></p>
                     <p class="card-text"><small class="text-body-secondary"><?= $cinema['VILLE'] ?></small></p>
                     <p class="card-text"><small class="text-body-secondary"><?= $cinema['PAYS'] ?></small></p>
-                    <a href="film.php?id=<?= $cinema['ID_CINEMA']; ?>" class="btn btn-primary">NOS SEANCES</a>
+                    <a href="cinema.php?id=<?= $cinema['ID_CINEMA']; ?>" class="btn btn-primary">NOS SEANCES</a>
                 </div>
             </div>
         </div>

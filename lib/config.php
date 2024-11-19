@@ -7,9 +7,11 @@ define('_ASSETS_IMG_CINE_PATH_','assets/image/');
 
 $mainMenu = [
     'films.php' => 'Films',
-    'login.php' => 'Se connecter',
     'reservation.php' => 'Réservation',
-    'contact.php' => 'Contact',
+    'contact.php' => 'Contact'
+];
+
+$mainMenuEmploye = [
     'ajout_modification_film.php' => 'Ajouter/Modifier un film',
-    'page_espace_employé_cinephoria.php' => 'espace remployé'
+    'page_espace_employé_cinephoria.php' => 'Intranet'
 ];

@@ -1,6 +1,6 @@
 <?php
-require_once('template\header.php');
-require_once('lib\film.php');
+require_once('template/header.php');
+require_once('lib/film.php');
 $id = (int)$_GET['id'];
 
 $film = getFilmById ($pdo,$id);
@@ -35,5 +35,5 @@ if ($film) {
 <?php } ?>
 
 <?php 
-require_once ('template\footer.php');
+require_once ('template/footer.php');
 ?>
